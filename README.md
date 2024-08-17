@@ -5,9 +5,13 @@ We Are Going To Code An Basic Circuit With Signal Gates Like AND,NOT and OR Gate
 For You Need To Code in circom zsnark You Need To Have Basic Knowledge About All The circuit Gates ,A Simple Idea Is Provided Below So THat You Can GEt What Are The Different Gates And How They Work
 ## AND GATE
 ![andgate](andgate.png)
+## NOT GATE
+![notgate](notgate.png)
+## OR GATE
+![orgate](orgate.png)
                
                                                                                                                                                                      
-These Three Gates Will Be We Using For This Project:                                                                                                                       ![Circuit Diagram](https://authoring.metacrafters.io/assets/cms/Assessment_b05f6ed658.png?updated_at=2023-02-24T00:00:37.278Z) 
+These Three Gates Will Be We Using For This Project:                                                                                                                       ![Circuit Diagram](CircuitDaigram.png) 
 
 **CircuitTemplates**
 

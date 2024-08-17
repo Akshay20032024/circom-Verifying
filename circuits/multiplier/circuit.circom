@@ -1,49 +1,48 @@
 pragma circom 2.0.0;
 
-/*This circuit Takes Two Inputs(a,b) And Give Specefic Output(q)*/  
+/*The Circuit Include Three Gates Which Are AND,NOT and OR Gates.The Circuit Take Two Input Signals a&b And Give Output q signal*/  
 
 template Multiplier2 () {  
 
-   //Declare Your Input 
+   //Declaring The Input Signals Of Circuit
       signal input a;
       signal input b;
 
 
-  //Declare Your Signal
+  //Declaring The Intrmediate Signals Of Circuit
       signal x;
       signal y;
 
 
-  //Declare Your Output
+  //Declaring The Output Of The Circuit
       signal output q;
 
 
-  //Declare Your Gate
+  //Declaring The Gates Required For Completion Of Circuit
       component andGate = AND();
       component notGate = NOT();
       component orGate = OR();
 
 
-  //Logic Of Your Circuit
+  //Coding THe logic Of Circuit (Connections In Cicuit)
 
-  //Inputs
+  //Giving Inputs To AND And NOT Gate
       andGate.a <== a;
       andGate.b <== b;
       notGate.in <== b;
-  // Declare Signals
+  // Getting Signals From AND and NOT Gate And assigning These Signals To X and Y Signals
 
       x <== andGate.out;
       y <== notGate.out;
-  //Declare OrGate Inputs
-
+  //Giving X and Y Signlas To The Input Of The OR Gate
       orGate.a <== x;
       orGate.b <== y;
 
-  //Output
+  //Assingning The Output Signal From OR Gate To Q Signal
 
       q <== orGate.out;
 
-   
+   //TEMPLATE Of The Gates Used For Building THe Given Circuit
 }
 template AND() {
     signal input a;
